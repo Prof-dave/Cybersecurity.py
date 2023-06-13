@@ -1,0 +1,4 @@
+import re
+
+emails= "2023-06-13 09:15:02 - INFO - EmailSender - Sending email to recipient@example.com2023-06-13 09:16:45 - INFO - EmailSender - Email sent successfully to recipient@example.com2023-06-13 09:20:13 - INFO - EmailSender - Sending email to another@example.com2023-06-13 09:21:35 - INFO - EmailSender - Email sent successfully to another@example.com2023-06-13 09:25:48 - INFO - EmailSender - Sending email to third@example.com2023-06-13 09:26:59 - INFO - EmailSender - Email sent successfully to third@example.com2023-06-13 09:30:27 - INFO - EmailSender - Sending email to fourth@example.com2023-06-13 09:32:11 - INFO - EmailSender - Email sent successfully to fourth@example.com"
+print(re.findall("\w+@\w+\.\w+",emails))
