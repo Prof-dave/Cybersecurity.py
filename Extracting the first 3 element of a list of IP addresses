@@ -1,0 +1,5 @@
+ip=["198.652.xxx.xxx","192.432.xxx.xxx","197.567.xxx.xxx","183.753.xxx.xxx"]
+networks=[]
+for addresses in ip:
+    networks.append(addresses[0:3])
+print(networks)
